@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pastel decorado</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://www.lizmarieblog.com/wp-content/uploads/2023/04/Snapinsta.app_338909923_1396535461073153_697391591664871526_n_1080.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      backdrop-filter: brightness(0.9);
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      color: #5a2a27;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .form-container {
+      background-color: white;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    h2, h3 {
+      color: #5a2a27;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #5a2a27;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    button:hover {
+      background-color: #7c3e3b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Mi pedido</header>
+  <div class="form-container">
+    <form action="https://formsubmit.co/guttacerazi@gmail.com" method="POST">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <label for="nombre">Mi nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+      </fieldset>
+
+      <h2>Crea tu propio pastel!</h2>
+
+      <h3>Capacidad</h3>
+      <select name="capacidad">
+        <option>6-8 porciones</option>
+        <option>12-15 porciones</option>
+        <option>20-25 porciones</option>
+        <option>35-40 porciones</option>
+        <option>45-50 personas</option>
+        <option>60-65 porciones</option>
+      </select>
+
+      <h3>Relleno</h3>
+      <select name="relleno">
+        <option>Zarzamora</option>
+        <option>Piña y coco</option>
+        <option>Cajeta y nuez</option>
+        <option>Macadamia</option>
+        <option>Ferrero</option>
+        <option>Moka con almendras</option>
+        <option>Fresas con chantilly</option>
+        <option>Rellenos de frutas</option>
+        <option>Dulce de leche</option>
+      </select>
+
+      <h3>Cobertura</h3>
+      <select name="cobertura">
+        <option>Buttercream</option>
+        <option>Fondant</option>
+        <option>Chantilly</option>
+        <option>Merengue</option>
+        <option>Glasa real</option>
+        <option>Ganache</option>
+      </select>
+
+      <h3>Frutas</h3>
+      <select name="frutas[]" multiple>
+        <option>Naranja</option>
+        <option>Uva verde</option>
+        <option>Uva roja</option>
+        <option>Cereza</option>
+        <option>Durazno</option>
+        <option>Zarzamora</option>
+      </select>
+
+      <h3>Leyenda</h3>
+      <p>Ingresa el texto que deseas agregar a la superficie de tu pastel</p>
+      <textarea name="leyenda" rows="4" placeholder="Escribe tu texto..."></textarea>
+
+      <button type="submit">Enviar pedido</button>
+    </form>
+  </div>
+
+</body>
+</html>
+S
